@@ -1,7 +1,5 @@
 """
 Programmer:		JJ Small
-Class:			CSCI 321 - Game Programming
-Project:		Game 01 - 2D Pygame
 Description:	This is the main module for this game.  It Handles
 				the game loop and all of that jazz.
 """

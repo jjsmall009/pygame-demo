@@ -1,7 +1,5 @@
 """
 Programmer:		JJ Small
-Class:			CSCI 321 - Game Programming
-Project:		Game 01 - 2D Pygame
 Description:	Platform module.  Does platform stuff
 """
 
@@ -29,9 +27,9 @@ class Platforms(pygame.sprite.Sprite):
 			self.rect.y -= 200
 			self.rect.x += 100
 			plat_col = pygame.sprite.spritecollide(self,plat_list,False)
-		
+
 	# Simple update function that moves the platform down at a rate of 2 pixels per frame
-	def update(self, plat_list):		
+	def update(self, plat_list):
 		height = 744
 		#platform_glow = pygame.image.load('../images/platform-glow.png')
 		self.rect.y += 2

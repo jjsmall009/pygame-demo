@@ -1,7 +1,5 @@
 """
 Programmer:		JJ Small
-Class:			CSCI 321 - Game Programming
-Project:		Game 01 - 2D Pygame
 Description:	Player module.  Creates a player object and has a lot of
 				functions to handle the player logic.
 """
@@ -68,7 +66,7 @@ class Player(pygame.sprite.Sprite):
 				self.right_index = 0
 			self.image = self.images[self.right_index+4]
 
-	# This big function handles updating the player, such as movement 
+	# This big function handles updating the player, such as movement
 	# and collisions and such
 	def update(self, collision_list, fireball_list):
 		self.frame_counter += 1
@@ -93,7 +91,7 @@ class Player(pygame.sprite.Sprite):
 
 		# Update the players horizontal movement
 		self.rect.x += self.x_change
-		
+
 		# Go some gravity stuff when you jump
 		if self.jumping:
 			self.yVelocity += self.gravity
@@ -102,7 +100,7 @@ class Player(pygame.sprite.Sprite):
 				self.yVelocity = 0
 				self.jumping = False
 				self.falling = True
-			
+
 		# Check for collisions with a platform, and the stand on it.
 		if not self.jumping:
 			for plat in collision_list:
@@ -115,7 +113,7 @@ class Player(pygame.sprite.Sprite):
 		fball_collision_list = pygame.sprite.spritecollide(self, fireball_list, True)
 		if len(fball_collision_list) > 0:
 			self.kill()
-		
+
 		# Check if you've fallen off of the platform
 		if self.standing:
 			self.rect.bottom = self.current_platform.rect.top+3
@@ -135,5 +133,3 @@ class Player(pygame.sprite.Sprite):
 				self.falling = True
 				self.standing = False
 				self.yVelocity = 0
-
-	

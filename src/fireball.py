@@ -1,7 +1,5 @@
 """
 Programmer:		JJ Small
-Class:			CSCI 321 - Game Programming
-Project:		Game 01 - 2D Pygame
 Description:	Fireball module, creates it.
 """
 
@@ -12,7 +10,7 @@ class Fireball(pygame.sprite.Sprite):
 	def __init__(self, x, y):
 		pygame.sprite.Sprite.__init__(self)
 
-		self.images = []	
+		self.images = []
 		# Add the fireball images to our image list
 		self.images.append(pygame.image.load('../images/fireballs/fb1.png'))
 		self.images.append(pygame.image.load('../images/fireballs/fb2.png'))
@@ -24,7 +22,7 @@ class Fireball(pygame.sprite.Sprite):
 		self.rect.x = x
 		self.rect.y = y
 		self.frame_counter = 0
-		
+
 	# Moves the fireball on the screen.
 	def update(self):
 		self.frame_counter += 1

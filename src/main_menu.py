@@ -1,7 +1,5 @@
 """
 Programmer:		JJ Small
-Class:			CSCI 321 - Game Programming
-Project:		Game 01 - 2D Pygame
 Description:	The main menu module.  A bust waiting loop that gets input
 				and blits the menu images to the screen.
 """
