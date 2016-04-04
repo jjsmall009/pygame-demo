@@ -11,3 +11,8 @@ Python 2.7 and the latest version of Pygame.
 * The collision detection between the player and the platforms is a bit janky.
 * The objective is to just survive as long as you can, so it's a bit boring.
 * Have fun.
+
+![Main Menu](https://github.com/jjsmall009/pygame-demo/blob/master/images/Main%20Menu.PNG)
+
+![Game Lvel](https://github.com/jjsmall009/pygame-demo/blob/master/images/Level.PNG)
+
